@@ -1,0 +1,256 @@
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 75px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #184e77;
+            padding: 15px 0;
+        }
+
+        .navbar-brand {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .navbar .nav-link {
+            color: white;
+            margin-left: 15px;
+        }
+
+        .navbar .nav-link:hover {
+            color: #90e0ef;
+        }
+
+        /* FULL SCREEN SECTIONS */
+        #introduction,
+        #featured,
+        #categories,
+        #resources,
+        #mission,
+        #contact {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        /* HOME */
+        .hero {
+            background-color: #d9edff;
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #184e77;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 25px 0;
+        }
+
+        /* HEADINGS */
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: #184e77;
+            margin-bottom: 45px;
+        }
+
+        /* CARDS */
+        .card {
+            height: 100%;
+            min-height: 390px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .card img {
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .card-text {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        .card .btn {
+            margin-top: auto;
+            padding: 12px 20px;
+        }
+
+        .card:hover {
+            box-shadow: 0 5px 15px #ccc;
+        }
+
+        /* BUTTONS */
+        .btn-primary {
+            background-color: #184e77;
+            border-color: #184e77;
+        }
+
+        .btn-primary:hover {
+            background-color: #1e6091;
+            border-color: #1e6091;
+        }
+
+        /* CATEGORIES */
+        #categories-section {
+            background-color: #edf6fc;
+        }
+
+        #categories .card {
+            min-height: 300px;
+            text-align: center;
+        }
+
+        #categories .card-body {
+            justify-content: center;
+            align-items: center;
+        }
+
+        #categories .card h5 {
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        /* ABOUT */
+        .about-section {
+            background-color: #e9ecef;
+        }
+
+        /* MISSION */
+        .mission-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .mission-content h2 {
+            color: #184e77;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        .mission-content p {
+            font-size: 19px;
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        /* CONTACT */
+        .contact-card {
+            min-height: 550px;
+        }
+
+        .contact-card h3,
+        .contact-card h5 {
+            color: #184e77;
+        }
+
+        .contact-card h5 {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .contact-card p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .contact-card a {
+            text-decoration: none;
+        }
+
+        .contact-card .btn {
+            margin-top: 10px;
+        }
+
+        .form-control {
+            padding: 12px;
+        }
+
+        .form-control:focus {
+            border-color: #184e77;
+            box-shadow: 0 0 5px #90e0ef;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #184e77;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* MOBILE AND TABLET */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .section-title {
+                font-size: 30px;
+            }
+
+            .card {
+                min-height: 350px;
+            }
+
+            .card img {
+                height: 200px;
+            }
+
+            .mission-image {
+                height: 260px;
+            }
+
+            .mission-content h2 {
+                font-size: 30px;
+            }
+
+            .mission-content p {
+                font-size: 17px;
+                text-align: left;
+            }
+
+            .contact-card {
+                min-height: auto;
+            }
+
+            .navbar .nav-link {
+                margin-left: 0;
+            }
+        }
